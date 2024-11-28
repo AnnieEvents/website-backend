@@ -168,5 +168,23 @@ function greetMe() {
     
 }
 
-greetMe()
+greetMe();
+
+function streetName ($name) {
+    echo "$name Asaba, <br>";
+}
+
+streetName("DLA");
+streetName("Ezenei");
+
+echo "<br>";
+echo "<br>";
+
+function HomeAddress ($number, $name) {
+    echo "$number $name Asaba, <br>";
+}
+
+HomeAddress ("5th", "DLA");
+HomeAddress ("8th", "Ezenei");
+
 ?>
