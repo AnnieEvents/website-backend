@@ -17,6 +17,20 @@
 
     <?php 
 
+    printStateAndCapital();
+    ?>
+
+    
+</table>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<?php
+function printStateAndCapital() {
     $statesAndCapitals = 
     array(
         'abia'=>'umuahia',
@@ -25,7 +39,9 @@
         'anambra'=>'awka',
         'bauchi'=>'bauchi',
     );
-    if (count($statesAndCapitals) > 0) {
+
+    if(count($statesAndCapitals) > 0) {
+
         foreach($statesAndCapitals as $key => $value){
             echo "
                 <tr>
@@ -36,26 +52,12 @@
         };
     } else {
         echo "
-            <tr>
-                <td>no states</td>
-                <td>no capital</td>
-            </tr>
-        ";
+                <tr> 
+                    <td>no states</td>
+                    <td>no capital</td>
+                </tr>
+            ";
     }
-    
-    
-    
 
-    ?>
-
-    
-</table>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html
-
-
+}
 ?>
